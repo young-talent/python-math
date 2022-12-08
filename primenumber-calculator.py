@@ -5,7 +5,7 @@ start_time = time.time()
 if number > 1 :
 	prime_numbers = [2]
 	i = 1
-	while i < number :
+	while i < number - 1 :
 		i = i + 2
 		n = 2
 		while n ** 2 < i or not math.floor(i / n) = i / n :
