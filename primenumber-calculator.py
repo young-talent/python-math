@@ -1,5 +1,5 @@
-import time.time
-import math.floor
+import time
+import math
 number = int(input("Alle Primzahlen von 0 bis "))
 start_time = time.time()
 if number > 1 :
@@ -12,6 +12,6 @@ if number > 1 :
 			n = n + 1
 		if not n ** 2 < i :
 			prime_numbers.append(i)
-	print(prime_numbers, "es hat", time.time - start_time, "s gedauert")
+	print(prime_numbers, "es hat", time.time() - start_time, "s gedauert")
 else :
 	print("Zu kleine Zahl!")
