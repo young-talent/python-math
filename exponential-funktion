@@ -1,0 +1,7 @@
+# Programm um die Exponentialfunktion zu berechnen
+
+number = float(input("Welche Zahl: "))
+genauigkeit = float(input("Mit welcher Genauigkeit: "))
+
+def exponentialfunktion(eingabe, genauigkeit):
+  
