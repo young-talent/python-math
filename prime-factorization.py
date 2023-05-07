@@ -1,13 +1,16 @@
-# Primfaktorzerlegung v1.0
-import math, time
+from time import time
+from math import floor
 
-while(True):
+while True:
     zahl = int(input("Zahl, die Primfaktorzerlegt werden soll: "))
-    start = time.time()
-    while(zahl > 1):
+    start = time()
+
+    while zahl > 1:
         i = 2
-        while(math.floor(zahl / i) != (zahl / i)):
+
+        while floor(zahl / i) != (zahl / i):
             i = i + 1
+
         print(i, end="; ")
         zahl = zahl / i
-    print("\n", "Die Berechnungen haben ", round(time.time() - start, 3), "s gedauert.", sep="", end="\n\n")
+    print("\n", "Die Berechnungen haben ", round(time() - start, 3), "s gedauert.", sep="", end="\n\n")
